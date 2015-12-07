@@ -1,0 +1,3 @@
+#add fibreoos into python env
+export PYTHONPATH="${PYTHONPATH}:/home/fibreoss/python"
+

@@ -1,0 +1,20 @@
+<table id={{ id }} class='display' cellspacing='0' width='100%' border='1'>
+  <thead>
+  <tr>
+    {% for val in header %}
+      <th><b>{{ val }}</b></th>
+    {% endfor %}
+  </tr>
+  </thead>
+  <tbody>
+  {% set row = 0 %}
+  {% for dict_row in dict %}
+    <tr>
+      {% for key in header %}
+        <td style='{{ style[row][key] }}'>{{ dict_row[key] }}</td>
+      {% endfor %}
+    </tr>
+  {% set row = row + 1 %}
+  {% endfor %} 
+  </tbody>
+</table>

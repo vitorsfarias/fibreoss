@@ -135,11 +135,7 @@ def ssh_connect(hostname,username,password,command,port=6622):
 
 
 	nbytes = 4096
-	#hostname = 'portal.ufg.fibre.org.br'
-	#port = 6622
-	#username = 'fibreoss_ufpa@ufg' 
-	#password = 'vitor123'
-	#command = 'ping -c 2 10.137.11.1;ping -c 2 10.137.11.3'
+
 
 	client = paramiko.Transport((hostname, port))
 	client.connect(username=username, password=password)
